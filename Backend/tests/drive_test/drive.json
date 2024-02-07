@@ -1,0 +1,26 @@
+{
+    "location": {
+      "district": "New York",
+      "city": "Brooklyn",
+      "pincode": "11201",
+      "country": "USA"
+    },
+    "organisation_name": "XYZ Medical Foundation",
+    "manager_name": "Dr. John Smith",
+    "start_date": "2023-05-01",
+    "end_date": "2023-05-07",
+    "form_id": "1",
+    "assistants": [
+      {
+        "name": "Jane Doe",
+        "email": "jane.doe@example.com",
+        "phone": "555-123-4567"
+      },
+      {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "555-987-6543"
+      }
+    ]
+  }
+  

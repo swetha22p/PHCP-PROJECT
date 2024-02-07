@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  flask_app:
+    container_name: app
+    env_file: 
+      - config/.env.prod
+    build: .
+    restart: unless-stopped
+    # command: ["./bin/run.sh"]
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    

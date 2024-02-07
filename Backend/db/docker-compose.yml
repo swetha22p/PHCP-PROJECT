@@ -1,0 +1,21 @@
+version: "3.2"
+
+services:
+  mongodb:
+    build: ${PWD}
+    # bind mount volume for MongoDB documents
+    volumes:
+    - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=1234
+      - MONGO_INITDB_DATABASE=app
+    
+
+volumes:
+  mongo-data:
+    driver: local
+  
+
